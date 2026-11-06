@@ -1,17 +1,3 @@
-"""
-Task 5 - Sentiment Analysis (positive / negative / neutral)
------------------------------------------------------------
-Approach in simple words:
-1. We have a small set of product reviews, each already labelled
-   positive, negative or neutral.
-2. TF-IDF turns each review into numbers based on its words.
-3. A Logistic Regression model learns which words go with which label
-   (e.g. "love", "excellent" -> positive; "broke", "waste" -> negative).
-4. We test it on reviews it has never seen and print accuracy and examples.
-
-Install once:  pip install pandas scikit-learn
-"""
-
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
